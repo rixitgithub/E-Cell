@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="fonts/icomoon/style.css">
+ 
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     
+     <!-- Style -->
+     <link rel="stylesheet" href="expo.css">
+  
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/66b0617e44.js" crossorigin="anonymous"></script>
+ 
+ 
+     <title>Vyapar Expo'23</title>
+    />
+</head>
+<body>
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+      
+      <header class="site-navbar" role="banner">
+  
+        <div class="container">
+          <div class="row align-items-center">
+            
+            <div class="col-11 col-xl-2">
+              <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">E-Cell</a></h1>
+            </div>
+            <div class="col-12 col-md-10 d-none d-xl-block">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+  
+                <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li ><a href="index.html"><span>Home</span></a></li>
+                <li><a href="#about"><span>About Us</span></a></li>
+                <li><a href="events.html"><span>Events</span></a></li>
+                <li><a href="team.html"><span>Our Team</span></a></li>
+                <li class="has-children">
+                  <a ><span>Gallery</span></a>
+                  <ul class="dropdown arrow-top">
+                    <li><a href="orientation.html">Orientation'23</a></li>
+                    <li><a href="open_mic.html">Open Mic</a></li>
+                    <li><a href="udaan.html">Udaan</a></li>
+                    <li class="active"><a href="expo.html">Vyapar Expo'23</a></li>
+                    <li class="has-children">
+                      <a href="#">Dropdown</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                        <li><a href="#">Menu Four</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                
+                
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                </ul>
+              </nav>
+            </div>
+  
+  
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+  
+            </div>
+  
+          </div>
+        </div>
+        
+      </header>
+    <h1 class="gal-head"><a id="ex">Vyapar <br> Expo'23</a> </h1>
+    <div class="full-img" id="fullImgBox">
+        <img src="gallery/img1.jpg"  id="fullImg">
+        <span onclick="closeFullImg()">x</span>
+    </div>
+    <div class="img-gallery">
+        <img src="gallery/img2.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img3.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img1.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img4.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img5.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img6.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img7.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img8.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img2.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img3.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img1.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img4.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img5.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img6.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img7.jpg" onclick="openFullImg(this.src)">
+        <img src="gallery/img8.jpg" onclick="openFullImg(this.src)">
+    </div>
+    <section class="footer">
+      <h3>"THE SECRET OF GETTING AHEAD IS GETTING STARTED" 
+        </h3>
+        <h4>- MARK TWAIN</h4>
+
+        <div class="icons">
+          <a href = "https://www.instagram.com/ecell_rgipt/"><i class="fa fa-instagram"></i></a>
+                <a href = "https://www.linkedin.com/in/e-cell-rgipt-461705220/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
+                <a href = "https://www.facebook.com/ecell.rgipt/"><i class="fa fa-facebook"></i></a>
+                <a href = "https://mobile.twitter.com/ecell_rgipt"><i class="fa fa-twitter"></i></a>
+        </div>
+        <p>Made and managed by E Cell Technical Team | <i class="fa fa-copyright"></i> 2023 | All rights reserved</p>
+    </section>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display="flex";
+            fullImg.src=pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display="none";
+        }
+    </script>
+</body>
+</html>
